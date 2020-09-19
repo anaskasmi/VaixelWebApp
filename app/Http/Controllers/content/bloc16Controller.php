@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\content;
 
 use App\ContentModels\Bloc16;
+use App\ContentModels\Question;
+use App\ContentModels\Questions_Category;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -16,6 +18,25 @@ class bloc16Controller extends Controller
     public function index()
     {
         return Bloc16::first();
+    }
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function questions()
+    {
+        return Question::with("category")->get();
+    }
+
+    /**
+     * Display a listing of the resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function categories()
+    {
+        return Questions_Category::with("questions")->get();
     }
 
     /**

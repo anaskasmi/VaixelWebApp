@@ -15,7 +15,7 @@ class bloc15Controller extends Controller
      */
     public function index()
     {
-        return Bloc15::first();
+        return Bloc15::get();
     }
 
     /**

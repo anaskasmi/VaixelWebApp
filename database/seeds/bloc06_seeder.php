@@ -14,7 +14,7 @@ class bloc06_seeder extends Seeder
         $bloc = new \App\ContentModels\Bloc06();
         $bloc->main_title = "Problems and Opportunities";
         $bloc->introduction_text = "";
-        $bloc->title1 = "Problems";
+        $bloc->title1 = "The market is buoyant";
         $bloc->text1 = "The major problems that companies face when advertising
         Sources :  Sources are  multiplying and getting more and more complex
 Efforts : Recruitment job become inefficient

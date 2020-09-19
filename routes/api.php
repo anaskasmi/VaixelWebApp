@@ -85,4 +85,6 @@ Route::prefix('/content')->middleware(['Cors'])->name('content.')->namespace('co
     Route::apiResource('bloc15', 'bloc15Controller');
     Route::apiResource('bloc15', 'bloc15Controller');
     Route::apiResource('bloc16', 'bloc16Controller');
+    Route::Get('questions', 'bloc16Controller@questions');
+    Route::Get('categories', 'bloc16Controller@categories');
 });
